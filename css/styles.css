@@ -1,6 +1,9 @@
 body{
   background-image: linear-gradient(#ccc8, #ccc8), url('https://cdn.pixabay.com/photo/2013/08/07/18/52/background-170534_960_720.jpg');
-  background-size: auto 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Helvetica, sans-serif;
   height: 100vh;
 }
