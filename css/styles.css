@@ -10,7 +10,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 12px;
   height: 100vh;
 }
@@ -25,6 +25,7 @@ body{
   body{
     font-size: 18px;
   }
+}
 
 header{
   height: 100vh;
@@ -71,8 +72,58 @@ a:hover{
 }
 
 .site-title{
+  font-family: 'Quintessential', cursive;
   font-size: 4em;
+  font-weight: 400;
 }
+
 .site-subtitle{
+  font-family: 'Coda', cursive;
   font-style: italic;
+  line-height: 2em;
+}
+
+.projetos{
+  background-color: #ffe4;
+  padding: 2em;
+  height: 100vh;
+}
+
+.projetos  h2{
+  font-family: 'Coda', cursive;
+  color: #ffe;
+  margin: 1.5em 0;
+}
+
+.projetos .grid{
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+@media(min-width: 560px){
+  .projetos .grid{
+    grid-template-columns: repeat(2, 1fr);
+    height: calc(100vh - 9em);
+  }
+}
+
+@media(min-width: 880px){
+  .projetos .grid{
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    height: calc(100vh - 9em);
+  }
+}
+
+.projetos figure{
+  text-align: center;
+}
+
+.img-projetos{
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: center;
 }
