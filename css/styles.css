@@ -73,7 +73,7 @@ a{
 a:hover{
   text-decoration: underline;
   color:#808000;
-
+  
 }
 
 .site-title{
@@ -90,13 +90,13 @@ a:hover{
 
 @keyframes introTitle{
   from{
-  transform: rotateX(90deg);
-  opacity: 0;
+    transform: rotateX(90deg);
+    opacity: 0;
   }
   
   to{
-  transform: rotateX(0deg);
-  opacity: 1;
+    transform: rotateX(0deg);
+    opacity: 1;
   }
 }
 
@@ -117,7 +117,39 @@ a:hover{
   font-style: italic;
   line-height: 2em;
 }
+.sobre p{
+  color: #ffe;
+  margin-bottom: 1.5em;
+  text-indent: 1.5em;
+  text-align: justify;
+}
 
+.sobre a{
+  color: #fa0;
+  text-decoration: underline;
+  transition: background-color .5s;
+}
+
+.sobre a:hover{
+  color: #ffe;
+  background-color: #fa0;
+}
+
+.sobre .avatar{
+  margin-left: 2em;
+}
+
+@media(min-width: 600px){
+  .sobre .avatar{
+    float: right;
+  }
+  
+}
+.sobre .avatar img{
+  border-radius: 50%;
+}
+
+.sobre,
 .projetos,
 .contato{
   background-color: #ccc4;
@@ -125,11 +157,21 @@ a:hover{
   min-height: 100vh;
 }
 
+@media(min-width: 1200px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+  
+}
+
+.sobre h2,
 .projetos h2, 
 .contato h2{
   font-family: 'Coda', cursive;
   color: #ffe;
-  margin: 1.5em 0;
+  margin-top: 1em;
 }
 
 .projetos .grid{
@@ -160,9 +202,30 @@ a:hover{
 
 .img-projetos{
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.contato .grid{
+  align-content: center;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5em;
+}
+
+@media(min-width: 560px){
+  .contato .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(min-width: 880px){
+  .contato .grid{
+    align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .contato .icons{
@@ -171,7 +234,7 @@ a:hover{
 
 .contato a{
   color: #ffe;
-  font-size: 4em;
+  font-size: 3em;
   transition: text-shadow 1s;
 }
 
