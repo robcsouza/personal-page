@@ -149,6 +149,10 @@ a:hover{
   border-radius: 50%;
 }
 
+.sobre .referencia{
+  text-align: center;
+}
+
 .sobre,
 .projetos,
 .contato{
